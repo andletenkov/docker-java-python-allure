@@ -16,4 +16,5 @@ RUN wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
     rm allure-commandline-2.9.0.zip
 
 ENV PATH="/allure/allure-2.9.0/bin:${PATH}"
-ENV ALLURE /allure/allure-2.9.0/bin/allure
+
+ENV ALLURE="${PWD}/allure/allure-2.9.0/bin/allure"
