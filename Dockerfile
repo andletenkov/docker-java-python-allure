@@ -11,10 +11,10 @@ RUN apt-get update && \
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
 RUN export JAVA_HOME
 
-RUN wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.9.0/allure-commandline-2.9.0.zip && \
-    unzip allure-commandline-2.9.0.zip -d /allure && \
-    rm allure-commandline-2.9.0.zip
+RUN wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.3/allure-commandline-2.13.3.zip && \
+    unzip allure-commandline-2.13.3.zip -d /allure && \
+    rm allure-commandline-2.13.3.zip
 
-ENV PATH="/allure/allure-2.9.0/bin:${PATH}"
+ENV PATH="/allure/allure-2.13.3/bin:${PATH}"
 
-ENV ALLURE="${PWD}/allure/allure-2.9.0/bin/allure"
+ENV ALLURE="${PWD}/allure/allure-2.13.3/bin/allure"
